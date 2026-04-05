@@ -1,8 +1,5 @@
- _   _  ___  ____  _   _  _____ 
-| \ | ||_ _|/ ___|| | | ||_   _|
-|  \| | | || |  _ | |_| |  | | 
-| |\  | | || |_| ||  _  |  | | 
-|_| \_||___|\____||_| |_|  |_| 
+```text
+|\/||_ \/|||||||||||||||_||||||||\||||||_||||_|||_|||||||
 Night-Bot ROS 2 Simulation 🤖
 Welcome to the Night-Bot simulation project! This repository contains a fully containerized ROS 2 (Jazzy Jalisco) environment, integrated with Gazebo for physics simulation and teleoperation.
 🚀 What's Inside?
@@ -21,10 +18,12 @@ $ docker run -it --net=host -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix
 •	Terminal 2 (Spawn Robot): ros2 run ros_gz_sim create -file /root/ros2_ws/src/simple_robot_description/urdf/robot.urdf -name night_bot -z 0.5
 •	Terminal 3 (Bridge): ros2 run ros_gz_bridge parameter_bridge /model/night_bot/cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist
 •	Terminal 4 (Control): ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/model/night_bot/cmd_vel
-### 📺 Simulation Preview
+```html
+## 📺 Simulation Preview
+
 <div align="center">
-  <h3>🎬 ROS 2 + Gazebo Simulation Demo</h3>
-  <video src="./ROS2-Gazebo-Docker-Integration-Demo.webm" width="800" controls></video>
+  <video src="ROS2-Gazebo-Docker-Integration-Demo.webm" width="100%" controls></video>
+  <p><b>🎬 ROS 2 + Gazebo Simulation Demo</b></p>
 </div>
 
 
