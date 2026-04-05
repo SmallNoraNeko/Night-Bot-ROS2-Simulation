@@ -1,4 +1,10 @@
-|\/||_ \/|||||||||||||||_||||||||\||||||_||||_|||_|||||||
+
+ _   _  ___  ____  _   _  _____ 
+| \ | ||_ _|/ ___|| | | ||_   _|
+|  \| | | || |  _ | |_| |  | |  
+| |\  | | || |_| ||  _  |  | |  
+|_| \_||___|\____||_| |_|  |_|  
+
 Night-Bot ROS 2 Simulation 🤖
 Welcome to the Night-Bot simulation project! This repository contains a fully containerized ROS 2 (Jazzy Jalisco) environment, integrated with Gazebo for physics simulation and teleoperation.
 🚀 What's Inside?
@@ -20,10 +26,6 @@ $ docker run -it --net=host -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix
 
 ## 📺 Simulation Preview
 
-<div align="center">
-  <video src="ROS2-Gazebo-Docker-Integration-Demo.webm" width="100%" controls></video>
-  <p><b>🎬 ROS 2 + Gazebo Simulation Demo</b></p>
-</div>
-
+![Night-Bot Demo](./ROS2-Gazebo-Docker-Integration-Demo.webm)
 
 Enjoy driving Night-Bot! 🏎️💨
