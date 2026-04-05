@@ -1,4 +1,3 @@
----test
  _   _  ___  ____  _   _  _____ 
 | \ | ||_ _|/ ___|| | | ||_   _|
 |  \| | | || |  _ | |_| |  | | 
@@ -23,6 +22,10 @@ $ docker run -it --net=host -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix
 •	Terminal 3 (Bridge): ros2 run ros_gz_bridge parameter_bridge /model/night_bot/cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist
 •	Terminal 4 (Control): ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/model/night_bot/cmd_vel
 ### 📺 Simulation Preview
-![Night-Bot Demo](./ROS2-Gazebo-Docker-Integration-Demo.webm)
+<div align="center">
+  <h3>🎬 ROS 2 + Gazebo Simulation Demo</h3>
+  <video src="./ROS2-Gazebo-Docker-Integration-Demo.webm" width="800" controls></video>
+</div>
+
 
 Enjoy driving Night-Bot! 🏎️💨
