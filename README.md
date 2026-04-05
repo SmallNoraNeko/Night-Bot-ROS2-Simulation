@@ -24,6 +24,7 @@ $ docker build -t night_ros2_robot_sim .
 $ docker run -it --net=host -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix night_ros2_robot_sim /bin/bash
 
 3. Launch the Demo (Open 4 terminals inside Docker)
+
 •       Terminal 1 (Gazebo): gz sim -r empty.sdf
 
 •       Terminal 2 (Spawn Robot): ros2 run ros_gz_sim create -file /root/ros2_ws/src/simple_robot_description/urdf/robot.urdf -name night_bot -z 0.5
@@ -34,7 +35,7 @@ $ docker run -it --net=host -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix
 
 ## 📺 Simulation Preview
 <div align="center">
-<video src="ROS2-Gazebo-Docker-Integration-Demo.webm" width="100%" controls></video>
+  <img src="demo.gif" width="100%">
 </div>
 
 Enjoy driving Night-Bot! 🏎️💨
